@@ -1,0 +1,85 @@
+forceunsat {on,off} [on]
+adapt {off}[off] 
+fix-phas-rest {on,off} [off]
+luby {on,off}[off]
+gr {on,off}[on]
+rnd-init {off} [off]
+rnd-freq [0, 1][0]
+rinc  [1.1,4][2]
+cla-decay [0.9,0.99999][0.999]l
+gc-frac [0.1,0.9][0.5]
+max-var-decay [0.9,0.99999][0.95]
+var-decay [0.6,0.99999][0.8]
+ccmin-mode [0,2][2]i
+phase-saving [0,2][2]i
+phase-restart [0,1][0]i
+minLBDMinimizingClause [3,20][6]i
+minSizeMinimizingClause [3,100][30]i
+chanseok {on,off}[off]
+luby-factor [1,1024][100]il
+co [2,16][5]i
+minLBDFrozenClause [10,1000][30]il
+specialIncReduceDB [10,100000][1000]il
+incReduceDB [100,10000][300]il
+firstReduceDB [100,10000][2000]il
+R [1,5][1.4]
+K [0.5,0.99999][0.8]
+szTrailQueue [100,100000][5000]il
+szLBDQueue [10,1024][50]il
+
+cardinality {0,1,2}[1]i
+pb [0,2][2]i
+amo [0,0.99999][0]
+#algorithm [0,7][7]i
+algorithm {0,1,2,3,4,6}[1]
+
+bmo {on,off} [on]
+pmreslin-r-b-s {on,off} [off]
+pmreslin-v-inc {on,off} [off]
+pmreslin-cgvar {on,off} [off]
+pmreslin-varres {on,off} [off]
+pmreslin-del {on,off} [off]
+
+pmreslin {1,2}[1]i
+pmreslin-cglim [-1,60][30]i
+
+cb-i-varres {on,off} [off]
+cb-varCG {on,off} [off]
+cb-r-2-s {on,off} [off]
+cb-varres {on,off} [on]
+cb-del {on,off} [on]
+
+cb {1,2,3}[1]i
+cb-cglim [-1,1000][30]i
+
+preprocess {on,off} [on]
+pr-rec {on,off} [off]
+pr-min {on,off} [on]
+
+
+weight-strategy [0,2][2]i
+symmetry {on,off} [on]
+symmetry-limit [1,1000000][500000]il
+graph-type {0,1,2}[2]i
+partition-strategy [0,2][2]i
+
+luby-factor | luby in {on}
+co | chanseok in {on}
+weight-strategy | algorithm in {0}
+symmetry | algorithm in {0}
+symmetry-limit | algorithm in {0}
+
+graph-type | algorithm in {3}
+partition-strategy | algorithm in {3}
+
+
+{cardinality=0 , algorithm=3}
+{cardinality=2 , algorithm=3}
+{graph-type=1 , algorithm=3}
+
+{cardinality=0 , algorithm=4}
+{cardinality=2 , algorithm=4}
+
+
+
+

@@ -1,0 +1,23 @@
+
+parameterFile = "./input/target_algorithms/loandra/parameters.txt"
+
+
+
+maxTime = 3686400
+
+
+
+digits = 8
+
+
+
+
+execDir = "."
+
+targetRunner = "./input/scenarios/irace/loandra/rmg/20/ta_runner.py"
+
+
+trainInstancesFile = "./input/instances/sat/sets/rmg/train.txt"
+
+
+

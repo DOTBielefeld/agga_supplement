@@ -1,0 +1,22 @@
+
+parameterFile = "./input/target_algorithms/hgs/parameters.txt"
+
+
+
+maxTime = 3686400
+
+
+
+digits = 8
+
+
+
+execDir = "."
+
+targetRunner = "./input/scenarios/irace/hgs/cvrp/40/ta_runner.py"
+
+
+trainInstancesFile = "./input/instances/mip/sets/cvrp_500_750_1000/train.txt"
+
+
+

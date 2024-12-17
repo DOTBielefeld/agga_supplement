@@ -1,0 +1,9 @@
+algo = python ./input/scenarios/SMAC/cplex/7_4_50/20/ta_runner.py
+paramfile = ./input/target_algorithms/cplex/params.pcs
+execdir = .
+deterministic = 0
+run_obj = quality
+wallclock-limit = 28800
+instance_file = ./input/instances/mip/sets/aircargo/7_4_50/train.txt
+
+cutoff_time = 20

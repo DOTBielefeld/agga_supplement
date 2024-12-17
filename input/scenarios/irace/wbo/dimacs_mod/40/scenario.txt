@@ -1,0 +1,22 @@
+
+parameterFile = "./input/target_algorithms/wbo/parameters.txt"
+
+
+
+maxTime = 3686400
+
+
+
+digits = 8
+
+
+
+execDir = "."
+
+targetRunner = "./input/scenarios/irace/wbo/dimacs_mod/40/ta_runner.py"
+
+
+trainInstancesFile = "./input/instances/sat/sets/maxcut/dimacs_mod/train.txt"
+
+
+

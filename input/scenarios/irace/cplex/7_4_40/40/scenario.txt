@@ -1,0 +1,21 @@
+
+parameterFile = "./input/target_algorithms/cplex/parameters.txt"
+
+
+
+maxTime = 3686400
+
+
+
+digits = 8
+
+
+execDir = "."
+
+targetRunner = "./input/scenarios/irace/cplex/7_4_40/40/ta_runner.py"
+
+
+trainInstancesFile = "./input/instances/mip/sets/aircargo/7_4_40/train.txt"
+
+
+

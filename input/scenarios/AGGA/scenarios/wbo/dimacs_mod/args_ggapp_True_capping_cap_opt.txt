@@ -1,0 +1,17 @@
+--seed 85
+--num_cpu 128
+--termination_criterion runtime
+--initial_instance_set_size 5
+--target_reach 120
+--instance_increment_size 1
+--time_instance_set_full 10800
+--memory_limit 2048
+--localmode False
+--use_ggapp True
+--gga_rand_ration 0
+--capping cap_opt
+--log_folder ./logs/wbo/dimacs_mod/ge_model_True_capping_cap_opt
+--wrapper_mod_name wrapper.wbo_wrapper
+--wrapper_class_name WBO_Wrapper
+--quality_match 'o \d+'
+--quality_extract '\d+'

@@ -1,0 +1,36 @@
+wrapper_exe = python3
+wrapper_name = ta_runner.py
+
+population = 256
+generations = 500
+min_generations = 99
+
+max_age = 3
+rand_replace_prob = 0.1
+
+eval_group_size = 8
+eval_time_limit = 20
+
+tuner_rt_limit = 28800
+
+winners_percentage = 0.125
+sigma_percentage = 1.0
+
+crossover_operator = gga
+crossover_probability = 0.1
+
+mutation_probability = 0.1
+
+objective = avg
+cancel = cost
+
+
+use_elite_group = yes
+
+instances_selector = ilinear
+instances_dir = ./input
+instances_min = 5
+instances_max = 0
+instances_gen_max = -2
+
+seed = 1000

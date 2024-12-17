@@ -1,0 +1,5 @@
+cutoff_time = 60
+instance_file = ./input/instances/mip/sets/aircargo/7_4_50/train.txt
+paramfile = ./input/target_algorithms/cplex/params.pcs
+wallclock_limit = 86400
+

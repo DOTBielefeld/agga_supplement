@@ -1,0 +1,15 @@
+forceunsat "-" c ("forceunsat", "no-forceunsat")
+adapt "-" c (no-adapt) 
+fix_phas_rest "-" c ("fix-phas-rest", "no-fix-phas-rest")
+luby "-" c ("luby", "no-luby")gr "-" c ("gr", "no-gr")rnd_init "-" c ("no-rnd-init")rnd_freq "-rnd-freq=" r (0, 1)rinc "-rinc=" r (1.1, 4)cla_decay "-cla-decay=" r,log (0.9, 0.9999)gc_frac "-gc-frac=" r (0.1, 0.9)max_var_decay "-max-var-decay=" r (0.9, 0.9999)var_decay "-var-decay=" r (0.6, 0.9999)ccmin_mode "-ccmin-mode=" i (0, 2)phase_saving "-phase-saving=" i (0, 2)phase_restart "-phase-restart=" i (0, 1)minLBDMinimizingClause "-minLBDMinimizingClause=" i (3, 20)minSizeMinimizingClause "-minSizeMinimizingClause=" i (3, 100)chanseok "-" c ("chanseok", "no-chanseok")minLBDFrozenClause "-minLBDFrozenClause=" i,log (10, 1000)specialIncReduceDB "-specialIncReduceDB=" i,log (10, 100000)incReduceDB "-incReduceDB=" i,log (100, 10000)firstReduceDB "-firstReduceDB=" i,log (100, 10000)R "-R=" r (1, 5)K "-K=" r (0.5, 0.9999)szTrailQueue "-szTrailQueue=" i,log (100, 100000)szLBDQueue "-szLBDQueue=" i,log (10, 1024)rs "-rs=" i (0, 2)c "-c=" i,log (1, 1000000)cardinality "-cardinality=" i (0, 2)pb "-pb=" i (0, 2)#algorithm "-algorithm=" i (0, 7)
+algorithm "-algorithm=" c (0,1,2,3,4,6,7)
+weight_strategy "-weight-strategy=" i (0, 2) | algorithm == 0symmetry "-" c (symmetry,no-symmetry) | algorithm == 0symmetry_limit "-symmetry-limit=" i,log (1, 1000000) | algorithm == 0graph_type "-graph-type=" i (0, 2) | algorithm == 3partition_strategy "-partition-strategy=" i (0, 2) | algorithm == 3luby_factor "-luby-factor=" i,log (1, 1024) | luby == "luby"co "-co=" i (2, 16) | chanseok == "chanseok"
+
+[forbidden]
+cardinality == 0 & algorithm == 3
+cardinality == 2 & algorithm == 3
+cardinality == 0 & algorithm == 4
+cardinality == 2 & algorithm == 4
+cardinality == 0 & algorithm == 5
+cardinality == 2 & algorithm == 5
+graph_type == 1 & algorithm == 3

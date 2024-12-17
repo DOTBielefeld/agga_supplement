@@ -1,0 +1,9 @@
+algo = python ./input/scenarios/SMAC/hgs/cvrp/hv/ta_runner.py
+paramfile = ./input/target_algorithms/HGS-CVRP-main/params.pcs
+execdir = .
+deterministic = 0
+run_obj = quality
+wallclock-limit = 86400
+instance_file = ./input/instances/mip/sets/cvrp_500_750_1000/train.txt
+
+cutoff_time = 60

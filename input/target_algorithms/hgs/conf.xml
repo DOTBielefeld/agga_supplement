@@ -1,0 +1,13 @@
+<algconf>
+  <node type="and" name="__dummy__" domain="[0]" ignore="true">
+    <node type="and" name="nbGranular" domain="[1, 1000]" prefix="-nbGranular " />
+    <node type="and" name="mu" domain="[10, 100]" prefix="-mu " />
+    <node type="and" name="lambda" domain="[10, 100]" prefix="-lambda " />
+    <node type="and" name="nbElite" domain="[0, 100]" prefix="-nbElite " />
+    <node type="and" name="nbClose" domain="[1, 20]" prefix="-nbClose " />
+    <node type="and" name="nbIterPenaltyManagement" domain="[1, 2000]" prefix="-nbIterPenaltyManagement " />
+    <node type="and" name="targetFeasible" domain="[0, 1]" prefix="-targetFeasible " />
+    <node type="and" name="penaltyIncrease" domain="[0, 5]" prefix="-penaltyIncrease " />
+    <node type="and" name="penaltyDecrease" domain="[0, 5]" prefix="-penaltyDecrease " />
+  </node>
+</algconf>

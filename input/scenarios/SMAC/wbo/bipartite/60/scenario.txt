@@ -1,0 +1,9 @@
+algo = python ./input/scenarios/SMAC/wbo/bipartite/60/ta_runner.py
+paramfile = ./input/target_algorithms/wbo/params.pcs
+execdir = .
+deterministic = 0
+run_obj = quality
+wallclock-limit = 28800
+instance_file = ./input/instances/sat/sets/maxcut/bipartite/train.txt
+
+cutoff_time = 60

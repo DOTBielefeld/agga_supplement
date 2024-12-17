@@ -1,0 +1,51 @@
+<algconf><node type="and" name="__dummy__" domain="[0]" ignore="true">
+    <node type="and" name="forceunsat" domain="{on,off}" prefix="-forceunsat " />
+    <node type="and" name="adapt" domain="{off}" prefix="-adapt " />
+    <node type="and" name="fixphasrest" domain="{on,off}" prefix="-fix-phas-rest " />
+    <node type="and" name="gr" domain="{on,off}" prefix="-gr " />
+    <node type="and" name="rndinit" domain="{off}" prefix="-rnd-init " />
+    <node type="and" name="rndfreq" domain="[0, 1]" prefix="-rnd-freq " />
+    <node type="and" name="rinc" domain="[1.1,4]" prefix="-rinc " />
+    <node type="and" name="cladecay" domain="[0.9,0.99999]" prefix="-cla-decay " />
+    <node type="and" name="gcfrac" domain="[0.1,0.9]" prefix="-gc-frac " />
+    <node type="and" name="maxvardecay" domain="[0.9,0.99999]" prefix="-max-var-decay " />
+    <node type="and" name="vardecay" domain="[0.6,0.99999]" prefix="-var-decay " />
+    <node type="and" name="ccminmode" domain="[0,2]" prefix="-ccmin-mode " />
+    <node type="and" name="phasesaving" domain="[0,2]" prefix="-phase-saving " />
+    <node type="and" name="phaserestart" domain="[0,1]" prefix="-phase-restart " />
+    <node type="and" name="minLBDMinimizingClause" domain="[3,20]" prefix="-minLBDMinimizingClause " />
+    <node type="and" name="minSizeMinimizingClause" domain="[3,100]" prefix="-minSizeMinimizingClause " />
+    <node type="and" name="minLBDFrozenClause" domain="[10,1000]" prefix="-minLBDFrozenClause " />
+    <node type="and" name="specialIncReduceDB" domain="[10,100000]" prefix="-specialIncReduceDB " />
+    <node type="and" name="incReduceDB" domain="[100,10000]" prefix="-incReduceDB " />
+    <node type="and" name="firstReduceDB" domain="[100,10000]" prefix="-firstReduceDB " />
+    <node type="and" name="R" domain="[1.1,4.9]" prefix="-R " />
+    <node type="and" name="K" domain="[0.5,0.99999]" prefix="-K " />
+    <node type="and" name="szTrailQueue" domain="[100,100000]" prefix="-szTrailQueue " />
+    <node type="and" name="szLBDQueue" domain="[10,1024]" prefix="-szLBDQueue " />
+    <node type="and" name="rs" domain="[0,2]" prefix="-rs " />
+    <node type="and" name="c" domain="[1,1000000]" prefix="-c " />
+    <node type="and" name="cardinality" domain="{0,1,2}" prefix="-cardinality " />
+    <node type="and" name="pb" domain="[0,2]" prefix="-pb " />
+<node type="or" name="chanseok" domain="{on, off}" prefix="-chanseok ">
+ <node type="and" name="co" domain="[2, 16]" or-domain="{on}" prefix="-co "/>
+</node>
+ <node type="or" name="luby" domain="{on, off}" prefix="-luby ">
+ <node type="and" name="luby_factor" domain="[1, 1024]" or-domain="{on}" prefix="-luby-factor "/>
+ </node>
+  <node type="or" name="algorithm" domain="{0,1,2,3,4,6,7}" prefix="-algorithm " >
+    <node type="and" name="symmetry" domain="{on,off}" or-domain="{0}" prefix="-symmetry " />
+    <node type="and" name="weightstrategy" domain="[0,2]" or-domain="{0}" prefix="-weight-strategy " />
+<node type="and" name="symmetrylimit" domain="[1,1000000]" or-domain="{0}" prefix="-symmetry-limit " />
+<node type="and" name="graphtype" domain="{0,1,2}" or-domain="{3}" prefix="-graph-type " />
+<node type="and" name="partitionstrategy" domain="[0,2]" or-domain="{3}" prefix="-partition-strategy " />
+ </node>
+</node>
+<constraints>
+<cstr><![CDATA[algorithm != 3 and cardinality != 0]]></cstr>
+<cstr><![CDATA[algorithm != 3 and cardinality != 2]]></cstr>
+<cstr><![CDATA[algorithm != 3 and graphtype != 1]]></cstr>
+<cstr><![CDATA[algorithm != 4 and cardinality != 0]]></cstr>
+<cstr><![CDATA[algorithm != 4 and cardinality != 2]]></cstr>
+</constraints>
+</algconf>

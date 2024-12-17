@@ -1,0 +1,16 @@
+--seed 55
+--num_cpu 128
+--termination_criterion runtime
+--initial_instance_set_size 5
+--target_reach 180
+--instance_increment_size 1
+--time_instance_set_full 10800
+--memory_limit 2048
+--localmode False
+--use_ggapp False
+--capping cap_opt
+--log_folder ./logs/loandra/bipartite/ge_model_False_capping_cap_opt
+--wrapper_mod_name wrapper.loandra_wrapper
+--wrapper_class_name Loandra_Wrapper
+--quality_match 'o \d+'
+--quality_extract '\d+'

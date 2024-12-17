@@ -1,0 +1,22 @@
+
+parameterFile = "./input/target_algorithms/loandra/parameters.txt"
+
+
+
+maxTime = 11059200
+
+
+
+digits = 8
+
+
+
+execDir = "."
+
+targetRunner = "./input/scenarios/irace/loandra/dimacs_mod/hv/ta_runner.py"
+
+
+trainInstancesFile = "./input/instances/sat/sets/maxcut/dimacs_mod/train.txt"
+
+
+

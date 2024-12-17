@@ -1,0 +1,5 @@
+cutoff_time = 60
+instance_file = ./input/instances/sat/sets/dimacs_mod/train.txt
+paramfile = ./input/target_algorithms/wbo/params.pcs
+wallclock_limit = 86400
+

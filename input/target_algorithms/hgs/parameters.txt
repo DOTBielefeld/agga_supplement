@@ -1,0 +1,9 @@
+nbGranular "-nbGranular " i (1, 1000
+mu "-mu " i (10, 100)
+lambda "-lambda " i (10, 100)
+nbElite "-nbElite " i (0, 100)
+nbClose "-nbClose " i (1, 20)
+nbIterPenaltyManagement "-nbIterPenaltyManagement " i (1, 2000)
+targetFeasible "-targetFeasible " r (0, 1) 
+penaltyIncrease "-penaltyIncrease " r (0, 5) 
+penaltyDecrease "-penaltyDecrease " r (0, 5)

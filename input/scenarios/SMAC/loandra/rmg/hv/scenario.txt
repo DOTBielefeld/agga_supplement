@@ -1,0 +1,9 @@
+algo = python ./input/scenarios/SMAC/loandra/rmg/hv/ta_runner.py
+paramfile = ./input/target_algorithms/loandra/params.pcs
+execdir = .
+deterministic = 0
+run_obj = quality
+wallclock-limit = 86400
+instance_file = ./input/instances/sat/sets/rmg/train.txt
+
+cutoff_time = 60
