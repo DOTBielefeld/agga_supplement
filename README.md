@@ -1,6 +1,6 @@
 **Supplementary material to the article:**
 
-## AGGA - A method for automated algorithm configuration of anytime algorithms
+## A method for automated algorithm configuration of anytime algorithms
 <br>
 
 ### Configuration scenarios
@@ -27,6 +27,8 @@ Instances can be obtained from:
 + CVRP [8] - in this repository  
 + MIP[9]  - in this repository  
 + [MaxSAT](http://www.cs.toronto.edu/maxsat-lib/maxsat-instances/master-set/unweighted/) [10]  
+
+You will need to unzip the instances
 
 ### References
 
