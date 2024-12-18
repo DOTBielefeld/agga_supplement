@@ -24,11 +24,9 @@ Each configuration scenario contains:
 ### Get the instances
 
 Instances can be obtained from:
-+ CVRP [8] - in this repository  
-+ MIP[9]  - in this repository  
++ CVRP [8] and MIP[9]  can be downloaded from [here](https://zenodo.org/records/14515806?token=eyJhbGciOiJIUzUxMiJ9.eyJpZCI6IjllNTYwNDBlLThkZjItNGJhOS04Zjc4LTJjODVkMjU4NmY2MSIsImRhdGEiOnt9LCJyYW5kb20iOiIyYmNiYjVmZjFhNWMwMTI1NmI0MjQ5ZGY0NGQ5MTA1YiJ9.p0cZ7dgnbi4oj6rTTztYB3w4_pXStOLlJoKOF9UYX80gCc9t_cpgkUcSYdQsbB03S6bgPCGsLg3tzjCgujp0Yw)
 + [MaxSAT](http://www.cs.toronto.edu/maxsat-lib/maxsat-instances/master-set/unweighted/) [10]  
 
-You will need to unzip the instances
 
 ### References
 
